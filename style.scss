@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+@mixin font1($size) {
+    font-family: 'Akaya Kanadaka';
+    font-size: $size;
+    color: cyan;
+}
+@mixin background($background) {
+    background-image: url($background);
+    background-size: cover;
+    padding: 5%;
+}
+body{
+    margin: 0;
+}
+@mixin font2($size) {
+    font-family: 'Otomanopee One';
+    font-size: $size;
+    color: cyan;
+}
+.intro{
+    text-align: center;
+    @include background('/images/doppler.png');
+}
+#zen-supporting{
+    @include background('/images/sky.jpg');
+}
+.sidebar{
+    @include background('/images/city.jpg');
+}
+p{
+    @include font2(1.04em);
+}
+h1{
+    @include font1(5.04em);
+    text-align: center;
+    text-shadow: 10px 10px 20px pink;
+    letter-spacing: -1px;
+}
+h2{
+    @include font1(2.04em);
+    text-align: center;
+    text-shadow: 2px 2px 5px blanchedalmond;
+    letter-spacing: -1px;
+}
+h3{
+    @include font1(5.04em);
+    text-shadow: 2px 2px 5px blanchedalmond;
+    letter-spacing: -1px;
+}
+#main-supporting{
+    text-align: left;
+}
+ul{
+    @include font2(1.04em);
+}
+footer{
+    @include font2(1.04em);
+}
+abbr{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+a:link{
+    color: cyan;
+}
+a:hover{
+    color: pink;
+    background-color: purple;
+}
