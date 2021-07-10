@@ -6,19 +6,19 @@ body {
 
 .intro {
   text-align: center;
-  background-image: url("/images/doppler.png");
+  background-image: url("./images/doppler.png");
   background-size: cover;
   padding: 5%;
 }
 
 #zen-supporting {
-  background-image: url("/images/sky.jpg");
+  background-image: url("./images/sky.jpg");
   background-size: cover;
   padding: 5%;
 }
 
 .sidebar {
-  background-image: url("/images/city.jpg");
+  background-image: url("./images/city.jpg");
   background-size: cover;
   padding: 5%;
 }
@@ -27,12 +27,13 @@ p {
   font-family: 'Otomanopee One';
   font-size: 1.04em;
   color: cyan;
+  text-align: center;
 }
 
 h1 {
   font-family: 'Akaya Kanadaka';
   font-size: 5.04em;
-  color: cyan;
+  color: #ff00c8;
   text-align: center;
   text-shadow: 10px 10px 20px pink;
   letter-spacing: -1px;
@@ -41,22 +42,56 @@ h1 {
 h2 {
   font-family: 'Akaya Kanadaka';
   font-size: 2.04em;
-  color: cyan;
+  color: #ff00c8;
   text-align: center;
-  text-shadow: 2px 2px 5px blanchedalmond;
+  text-shadow: 5px 5px 10px blanchedalmond;
   letter-spacing: -1px;
 }
 
 h3 {
   font-family: 'Akaya Kanadaka';
   font-size: 5.04em;
-  color: cyan;
-  text-shadow: 2px 2px 5px blanchedalmond;
+  color: #ff00c8;
+  text-shadow: 5px 5px 10px blanchedalmond;
   letter-spacing: -1px;
 }
 
 #main-supporting {
   text-align: left;
+}
+
+nav {
+  margin-bottom: 3rem;
+  border-radius: 2rem;
+  background: cornflowerblue;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+}
+
+.zen-resources ul {
+  border-radius: 2rem;
+  background: cornflowerblue;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+}
+
+#zen-supporting p {
+  border-radius: 1rem;
+  margin-bottom: -1.1rem;
+  background: cornflowerblue;
+}
+
+.intro p {
+  margin-bottom: -1.1rem;
+  background: cornflowerblue;
 }
 
 ul {
@@ -66,6 +101,8 @@ ul {
 }
 
 footer {
+  border-radius: 1rem;
+  background: cornflowerblue;
   font-family: 'Otomanopee One';
   font-size: 1.04em;
   color: cyan;

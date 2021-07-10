@@ -3,7 +3,7 @@
 @mixin font1($size) {
     font-family: 'Akaya Kanadaka';
     font-size: $size;
-    color: cyan;
+    color: rgb(255, 0, 200);
 }
 @mixin background($background) {
     background-image: url($background);
@@ -20,16 +20,17 @@ body{
 }
 .intro{
     text-align: center;
-    @include background('/images/doppler.png');
+    @include background("./images/doppler.png");
 }
 #zen-supporting{
-    @include background('/images/sky.jpg');
+    @include background("./images/sky.jpg");
 }
 .sidebar{
-    @include background('/images/city.jpg');
+    @include background("./images/city.jpg");
 }
 p{
     @include font2(1.04em);
+    text-align: center
 }
 h1{
     @include font1(5.04em);
@@ -40,21 +41,47 @@ h1{
 h2{
     @include font1(2.04em);
     text-align: center;
-    text-shadow: 2px 2px 5px blanchedalmond;
+    text-shadow: 5px 5px 10px blanchedalmond;
     letter-spacing: -1px;
 }
 h3{
     @include font1(5.04em);
-    text-shadow: 2px 2px 5px blanchedalmond;
+    text-shadow: 5px 5px 10px blanchedalmond;
     letter-spacing: -1px;
 }
 #main-supporting{
     text-align: left;
 }
+nav{
+    margin-bottom: 3rem;
+    border-radius: 2rem;
+    background: cornflowerblue;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+.zen-resources ul{
+    border-radius: 2rem;
+    background: cornflowerblue;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+#zen-supporting p{
+    border-radius: 1rem;
+    margin-bottom: -1.1rem;
+    background: cornflowerblue;
+}
+.intro p{
+    margin-bottom: -1.1rem;
+    background: cornflowerblue;
+}
 ul{
     @include font2(1.04em);
 }
 footer{
+    border-radius: 1rem;
+    background: cornflowerblue;
     @include font2(1.04em);
 }
 abbr{
